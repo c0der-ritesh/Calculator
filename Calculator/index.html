@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculate">
+        <div class="screen">
+            <input type="text" value="0" placeholder="0" id="inputbox" disabled >
+        </div>
+        <div class="row">
+            <button type="button" class="operator" onclick="deletescreen()">AC</button>
+            <button type="button" class="operator" onclick="delonebyone()">CLR</button>
+            <button type="button" class="operator" onclick="memory()">MBR</button>
+            <button type="button" class="operator" onclick="operator('/')">/</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="operator('7')">7</button>
+            <button type="button" onclick="operator('8')">8</button>
+            <button type="button" onclick="operator('9')">9</button>
+            <button type="button" class="operator" onclick="operator('*')">x</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="operator('4')">4</button>
+            <button type="button" onclick="operator('5')">5</button>
+            <button type="button" onclick="operator('6')">6</button>
+            <button type="button" class="operator" onclick="operator('+')">+</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="operator('1')">1</button>
+            <button type="button" onclick="operator('2')">2</button>
+            <button type="button" onclick="operator('3')">3</button>
+            <button type="button" class="operator" onclick="operator('-')">-</button>
+        </div>
+        <div class="row">
+            <button type="button" class="operator" id="plmi" onclick="operator('00')">00</button>
+            <button type="button" onclick="operator('0')">0</button>
+            <button type="button" onclick="operator('.')">.</button>
+            <button type="button" id="equal" class="operator" onclick="output()">=</button>
+        </div>
+    </div>
+</body>
+</html>
